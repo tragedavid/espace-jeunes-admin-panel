@@ -1,8 +1,8 @@
 ## Site panel d'administration du PASS Jeunes
 
 <h2>Installation logiciels :<h2>
-<li><a href="https://getcomposer.org/">Composer</a><li>
-<li><a href="https://nodejs.org/en/">Node JS</a></li>
+<li><a href="https://getcomposer.org/" target="_blank">Composer</a><li>
+<li><a href="https://nodejs.org/en/" target="_bank">Node JS</a></li>
 
 <h2>Installation projet :</h2>
 <li>cd pass-jeunes-admin-panel</li>

@@ -37,16 +37,16 @@ Route::get('/activité/modifier', 'ActivityController@edit');
 Route::post('/activité/update', 'ActivityController@update');
 Route::post('/activité/archiver', 'ActivityController@archive');
 
-Route::get('/tickets', 'TicketController@list');
+Route::get('/tickets/', 'TicketController@list');
 Route::get('/ticket/créer', 'TicketController@create');
 Route::post('/ticket/insérer', 'TicketController@insert');
-Route::get('/ticket/modifier', 'TicketController@edit');
+Route::get('/ticket/modifier/{id}', 'TicketController@edit');
 Route::post('/ticket/update', 'TicketController@update');
 Route::post('/ticket/archiver', 'TicketController@archive');
 
 Route::get('/formules', 'FormuleController@list');
 Route::get('/formule/créer', 'FormuleController@create');
 Route::post('/formule/insérer', 'FormuleController@insert');
-Route::get('/formule/modifier', 'FormuleController@edit');
+Route::get('/formule/modifier/{id}', 'FormuleController@edit');
 Route::post('/formule/update', 'FormuleController@update');
 Route::post('/formule/archiver', 'FormuleController@archive');
