@@ -13,7 +13,11 @@ use Illuminate\Support\Str;
 class FormuleController extends Controller
 {
     public function list() {
-        return view('formules.index');
+        $formules = Formule::all();
+
+        return view('formules.index')
+        ->withFormules($formules)
+        ;
     }
 
     public function create() {
