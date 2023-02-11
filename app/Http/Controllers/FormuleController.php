@@ -32,10 +32,20 @@ class FormuleController extends Controller
     }
 
     public function edit($id) {
+        $formule = Formule::find($id);
 
+        return view('formules.edit')
+        ->withFormule($formule)
+        ;
     }
 
-    public function update($id) {
+    public function update(FormuleRequest $request, $id) {
+        $formule = Formule::find($id);
+        $query = $request->all();
+        $formule->libelle = $query['libelle'];
+        $formule->save();
+        // todo : /formule/{id} quand la page sera faite
+        return redirect(url("/formules"));
 
     }
 
