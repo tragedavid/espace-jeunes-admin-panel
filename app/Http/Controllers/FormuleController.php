@@ -50,6 +50,9 @@ class FormuleController extends Controller
     }
 
     public function archive($id) {
-        
+        // todo : archiver plutôt que supprimer
+        $formule = Formule::destroy($id);
+
+        return redirect(url("/formules"));
     }
 }

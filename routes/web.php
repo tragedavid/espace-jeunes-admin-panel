@@ -49,4 +49,4 @@ Route::get('/formule/créer', 'FormuleController@create');
 Route::post('/formule/insérer', 'FormuleController@insert');
 Route::get('/formule/modifier/{id}', 'FormuleController@edit');
 Route::post('/formule/update/{id}', 'FormuleController@update');
-Route::post('/formule/archiver', 'FormuleController@archive');
+Route::get('/formule/archiver/{id}', 'FormuleController@archive');
