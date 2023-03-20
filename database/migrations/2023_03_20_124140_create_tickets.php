@@ -19,7 +19,7 @@ class CreateTickets extends Migration
             $table->integer('id_ticket_type');
             $table->foreign('id_ticket_type')
                 ->references('id')
-                ->on('tickets_types');
+                ->on('ticket_types');
             $table->integer('id_formule');
             $table->foreign('id_formule')
                 ->references('id')

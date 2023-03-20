@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormulesActivites extends Migration
+class CreateFormuleActivites extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateFormulesActivites extends Migration
      */
     public function up()
     {
-        Schema::create('formules_activites', function (Blueprint $table) {
+        Schema::create('formule_activites', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->integer('id_formule');
@@ -34,6 +34,6 @@ class CreateFormulesActivites extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('formules_activites');
+        Schema::dropIfExists('formule_activites');
     }
 }
