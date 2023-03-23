@@ -21,21 +21,21 @@ Route::get('/jeune/créer', 'UserController@create');
 Route::post('/jeune/insérer', 'UserController@insert');
 Route::get('/jeune/modifier', 'UserController@edit');
 Route::post('/jeune/update', 'UserController@update');
-Route::post('/jeune/archiver', 'UserController@archive');
+Route::get('/jeune/archiver', 'UserController@archive');
 
 Route::get('/partenaires', 'CollaboratorController@list');
 Route::get('/partenaire/créer', 'CollaboratorController@create');
 Route::post('/partenaire/insérer', 'CollaboratorController@insert');
-Route::get('/partenaire/modifier', 'CollaboratorController@edit');
-Route::post('/partenaire/update', 'CollaboratorController@update');
-Route::post('/partenaire/archiver', 'CollaboratorController@archive');
+Route::get('/partenaire/modifier/{id}', 'CollaboratorController@edit');
+Route::post('/partenaire/update/{id}', 'CollaboratorController@update');
+Route::get('/partenaire/archiver/{id}', 'CollaboratorController@archive');
 
 Route::get('/activités', 'ActivityController@list');
 Route::get('/activité/créer', 'ActivityController@create');
 Route::post('/activité/insérer', 'ActivityController@insert');
 Route::get('/activité/modifier', 'ActivityController@edit');
 Route::post('/activité/update', 'ActivityController@update');
-Route::post('/activité/archiver', 'ActivityController@archive');
+Route::get('/activité/archiver', 'ActivityController@archive');
 
 Route::get('/tickets/', 'TicketTypeController@list');
 Route::get('/ticket/créer', 'TicketTypeController@create');

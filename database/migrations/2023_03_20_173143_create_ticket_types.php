@@ -17,6 +17,10 @@ class CreateTicketTypes extends Migration
             $table->id();
             $table->timestamps();
             $table->string('libelle');
+            $table->integer('id_partenaire');
+            $table->foreign('id_partenaire')
+                ->references('id')
+                ->on('partenaire');
         });
     }
 

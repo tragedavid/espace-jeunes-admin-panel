@@ -24,10 +24,6 @@ class CreateTickets extends Migration
             $table->foreign('id_formule')
                 ->references('id')
                 ->on('formules');
-            $table->integer('id_partenaire');
-            $table->foreign('id_partenaire')
-                ->references('id')
-                ->on('partenaire');
         });
     }
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\TicketType;
 use Illuminate\Http\Request;
 use App\Http\Requests\TicketTypeRequest;
+use App\Models\Partenaire;
 
 class TicketTypeController extends Controller
 {
@@ -17,7 +18,10 @@ class TicketTypeController extends Controller
     }
 
     public function create() {
-        return view('ticket_types.create');
+        $partenaires = Partenaire::all();
+        return view('ticket_types.create')
+        ->withPartenaires($partenaires)
+        ;
     }
 
     public function insert(TicketTypeRequest $request) {
@@ -29,9 +33,11 @@ class TicketTypeController extends Controller
 
     public function edit($id) {
         $ticket = TicketType::find($id);
+        $partenaires = Partenaire::all();
 
         return view('ticket_types.edit')
         ->withTicket($ticket)
+        ->withPartenaires($partenaires)
         ;
     }
 
@@ -39,6 +45,7 @@ class TicketTypeController extends Controller
         $ticket = TicketType::find($id);
         $query = $request->all();
         $ticket->libelle = $query['libelle'];
+        $ticket->id_partenaire = $query['id_partenaire'];
         $ticket->save();
 
         return redirect(url("/tickets"));
