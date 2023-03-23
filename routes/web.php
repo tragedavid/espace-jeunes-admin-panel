@@ -16,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/jeunes', 'UserController@list');
-Route::get('/jeune/créer', 'UserController@create');
-Route::post('/jeune/insérer', 'UserController@insert');
-Route::get('/jeune/modifier', 'UserController@edit');
-Route::post('/jeune/update', 'UserController@update');
-Route::get('/jeune/archiver', 'UserController@archive');
+Route::get('/jeunes', 'JeuneController@list');
+Route::get('/jeune/créer', 'JeuneController@create');
+Route::post('/jeune/insérer', 'JeuneController@insert');
+Route::get('/jeune/modifier/{id}', 'JeuneController@edit');
+Route::post('/jeune/update/{id}', 'JeuneController@update');
+Route::get('/jeune/archiver/{id}', 'JeuneController@archive');
 
 Route::get('/partenaires', 'CollaboratorController@list');
 Route::get('/partenaire/créer', 'CollaboratorController@create');
