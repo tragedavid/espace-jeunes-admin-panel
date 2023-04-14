@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\TicketType;
 use Illuminate\Http\Request;
 use App\Http\Requests\TicketTypeRequest;
+use App\Models\Formule;
 use App\Models\Partenaire;
 
 class TicketTypeController extends Controller
@@ -12,20 +13,23 @@ class TicketTypeController extends Controller
     public function list() {
         $tickets = TicketType::all();
 
-        return view('ticket_types.index')
+        return view('admin.ticket_types.index')
         ->withTickets($tickets)
         ;
     }
 
     public function create() {
         $partenaires = Partenaire::all();
-        return view('ticket_types.create')
+        $formules = Formule::all();
+        return view('admin.ticket_types.create')
         ->withPartenaires($partenaires)
+        ->withFormules($formules)
         ;
     }
 
     public function insert(TicketTypeRequest $request) {
         $data = $request->all();
+        // dd($data);
         TicketType::create($data);
 
         return redirect(url('/tickets'));
@@ -34,10 +38,12 @@ class TicketTypeController extends Controller
     public function edit($id) {
         $ticket = TicketType::find($id);
         $partenaires = Partenaire::all();
+        $formules = Formule::all();
 
-        return view('ticket_types.edit')
+        return view('admin.ticket_types.edit')
         ->withTicket($ticket)
         ->withPartenaires($partenaires)
+        ->withFormules($formules)
         ;
     }
 

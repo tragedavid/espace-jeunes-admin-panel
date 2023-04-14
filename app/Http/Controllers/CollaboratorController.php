@@ -11,13 +11,13 @@ class CollaboratorController extends Controller
     public function list() {
         $partenaires = Partenaire::all();
 
-        return view("partenaires.index")
+        return view("admin.partenaires.index")
         ->withPartenaires($partenaires);
         ;
     }
 
     public function create() {
-        return view("partenaires.create");
+        return view("admin.partenaires.create");
     }
 
     public function insert(PartenaireRequest $request) {
@@ -30,7 +30,7 @@ class CollaboratorController extends Controller
     public function edit($id) {
         $partenaire = Partenaire::find($id);
 
-        return view('partenaires.edit')
+        return view('admin.partenaires.edit')
         ->withPartenaire($partenaire)
         ;
     }

@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ticket extends Model
+class FormuleTicketType extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'id', 'libelle', 'code', 'id_ticket_type', 'id_jeune'
+        'id', 'id_formule', 'id_ticket_type', 'quantite'
     ];
 }

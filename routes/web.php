@@ -22,6 +22,7 @@ Route::post('/jeune/insérer', 'JeuneController@insert');
 Route::get('/jeune/modifier/{id}', 'JeuneController@edit');
 Route::post('/jeune/update/{id}', 'JeuneController@update');
 Route::get('/jeune/archiver/{id}', 'JeuneController@archive');
+Route::post('/jeune/insererformule/{id}', 'JeuneController@addFormule');
 
 Route::get('/partenaires', 'CollaboratorController@list');
 Route::get('/partenaire/créer', 'CollaboratorController@create');
@@ -49,4 +50,5 @@ Route::get('/formule/créer', 'FormuleController@create');
 Route::post('/formule/insérer', 'FormuleController@insert');
 Route::get('/formule/modifier/{id}', 'FormuleController@edit');
 Route::post('/formule/update/{id}', 'FormuleController@update');
+Route::post('/formule/ajouterticket/{id}', 'FormuleController@addTicketIntoFormule');
 Route::get('/formule/archiver/{id}', 'FormuleController@archive');

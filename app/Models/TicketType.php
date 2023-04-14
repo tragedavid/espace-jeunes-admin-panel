@@ -10,6 +10,6 @@ class TicketType extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id', 'libelle', 'id_partenaire'
+        'id', 'libelle', 'id_partenaire', 'id_formule'
     ];
 }

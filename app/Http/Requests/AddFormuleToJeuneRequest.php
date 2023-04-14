@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TicketRequest extends FormRequest
+class AddFormuleToJeuneRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,15 +24,7 @@ class TicketRequest extends FormRequest
     public function rules()
     {
         return [
-            'libelle' => 'required | max:63',
-            'code' => 'required'
-        ];
-    }
-
-    public function messages() {
-        return [
-            'libelle.required' => 'Le libellé ne doit pas être vide',
-            'libelle.max' => 'Le Libellé ne doit pas dépasser 63 caractères'
+            //
         ];
     }
 }

@@ -19,3 +19,17 @@
     @enderror
     <input type="submit" value="SOUMETTRE">
 </form>
+
+<h2>Ajouter une formule à {{$jeune->prenom}} {{$jeune->nom}}</h2>
+
+<form action="{{url("/jeune/insererformule/$jeune->id")}}" method="POST">
+    @csrf
+
+    <select name="id_formule" id="formule">
+        @foreach ($formules as $formule)
+            <option value="{{$formule->id}}">{{$formule->libelle}}</option>
+        @endforeach
+    </select>
+
+    <input type="submit" value="AJOUTER FORMULE">
+</form>

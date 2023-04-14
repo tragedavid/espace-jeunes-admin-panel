@@ -10,6 +10,7 @@
 <li>npm install</li>
 <li>npm run dev</li>
 <li>copy .env.example .env</li>
+<li>Modifier fichier .env</li>
 <li>php artisan migrate</li>
 <li>php artisan serve (peut être remplacé par tout système de serveur local)</li>
 

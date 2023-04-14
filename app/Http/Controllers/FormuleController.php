@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Formule;
 use App\Http\Requests\FormuleRequest;
+use App\Http\Requests\FormuleTicketTypeRequest;
+use App\Models\FormuleTicketType;
+use App\Models\TicketType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -15,13 +18,13 @@ class FormuleController extends Controller
     public function list() {
         $formules = Formule::all();
 
-        return view('formules.index')
+        return view('admin.formules.index')
         ->withFormules($formules)
         ;
     }
 
     public function create() {
-        return view('formules.create');
+        return view('admin.formules.create');
     }
 
     public function insert(FormuleRequest $request) {
@@ -33,9 +36,11 @@ class FormuleController extends Controller
 
     public function edit($id) {
         $formule = Formule::find($id);
+        $ticketTypes = TicketType::all();
 
-        return view('formules.edit')
+        return view('admin.formules.edit')
         ->withFormule($formule)
+        ->withTicketTypes($ticketTypes)
         ;
     }
 
@@ -47,6 +52,14 @@ class FormuleController extends Controller
         // todo : /formule/{id} quand la page sera faite
         return redirect(url("/formules"));
 
+    }
+
+    public function addTicketIntoFormule(FormuleTicketTypeRequest $request, $id) {
+        $data = $request->all();
+        $data['id_formule'] = $id;
+        FormuleTicketType::create($data);
+
+        return redirect(url("/formule/modifier/$id"));
     }
 
     public function archive($id) {

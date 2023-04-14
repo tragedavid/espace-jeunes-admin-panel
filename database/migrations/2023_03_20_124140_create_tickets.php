@@ -16,14 +16,15 @@ class CreateTickets extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->integer('code');
             $table->integer('id_ticket_type');
             $table->foreign('id_ticket_type')
                 ->references('id')
                 ->on('ticket_types');
-            $table->integer('id_formule');
-            $table->foreign('id_formule')
+            $table->integer('id_jeune');
+            $table->foreign('id_jeune')
                 ->references('id')
-                ->on('formules');
+                ->on('jeunes');
         });
     }
 
