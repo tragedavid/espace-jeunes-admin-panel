@@ -65,18 +65,10 @@
         <div class="navbar-dropdown">
           <a href="profile.html" class="navbar-item">
             <span class="icon"><i class="mdi mdi-account"></i></span>
-            <span>My Profile</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-settings"></i></span>
-            <span>Settings</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-email"></i></span>
-            <span>Messages</span>
+            <span>Mon profil</span>
           </a>
           <hr class="navbar-divider">
-          <a class="navbar-item">
+          <a href="index.html" class="navbar-item" >
             <span class="icon"><i class="mdi mdi-logout"></i></span>
             <span>Log Out</span>
           </a>
@@ -94,14 +86,6 @@
           <a href="profile.html" class="navbar-item">
             <span class="icon"><i class="mdi mdi-account"></i></span>
             <span>My Profile</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-settings"></i></span>
-            <span>Settings</span>
-          </a>
-          <a class="navbar-item">
-            <span class="icon"><i class="mdi mdi-email"></i></span>
-            <span>Messages</span>
           </a>
           <hr class="navbar-divider">
         </div>
@@ -161,7 +145,7 @@
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <ul>
       <li>Admin</li>
-      <li>Profile</li>
+      <li>Profil</li>
     </ul>
     <a href="https://github.com/justboil/admin-one-tailwind" target="_blank" class="button blue">
       <span class="icon"><i class="mdi mdi-github-circle"></i></span>
@@ -173,7 +157,7 @@
 <section class="is-hero-bar">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <h1 class="title">
-      Profile
+      Profil
     </h1>
     <button class="button light">Button</button>
   </div>
@@ -185,7 +169,7 @@
         <header class="card-header">
           <p class="card-header-title">
             <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-            Edit Profile
+            Modifier profil
           </p>
         </header>
         <div class="card-content">
@@ -196,7 +180,7 @@
                 <div class="field file">
                   <label class="upload control">
                     <a class="button blue">
-                      Upload
+                      Téléverser
                     </a>
                     <input type="file">
                   </label>
@@ -205,13 +189,13 @@
             </div>
             <hr>
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label">Prénom</label>
               <div class="field-body">
                 <div class="field">
                   <div class="control">
                     <input type="text" autocomplete="on" name="name" value="John Doe" class="input" required>
                   </div>
-                  <p class="help">Required. Your name</p>
+                  <p class="help">Requis votre Nom</p>
                 </div>
               </div>
             </div>
@@ -222,7 +206,7 @@
                   <div class="control">
                     <input type="email" autocomplete="on" name="email" value="user@example.com" class="input" required>
                   </div>
-                  <p class="help">Required. Your e-mail</p>
+                  <p class="help">Requis. Votre email</p>
                 </div>
               </div>
             </div>
@@ -230,7 +214,7 @@
             <div class="field">
               <div class="control">
                 <button type="submit" class="button green">
-                  Submit
+                  Envoyer
                 </button>
               </div>
             </div>
@@ -241,7 +225,7 @@
         <header class="card-header">
           <p class="card-header-title">
             <span class="icon"><i class="mdi mdi-account"></i></span>
-            Profile
+            Profil
           </p>
         </header>
         <div class="card-content">
@@ -250,7 +234,7 @@
           </div>
           <hr>
           <div class="field">
-            <label class="label">Name</label>
+            <label class="label">Nom</label>
             <div class="control">
               <input type="text" readonly value="John Doe" class="input is-static">
             </div>
@@ -269,38 +253,38 @@
       <header class="card-header">
         <p class="card-header-title">
           <span class="icon"><i class="mdi mdi-lock"></i></span>
-          Change Password
+          Changer mot de passe
         </p>
       </header>
       <div class="card-content">
         <form>
           <div class="field">
-            <label class="label">Current password</label>
+            <label class="label">Mot de passe actuel</label>
             <div class="control">
               <input type="password" name="password_current" autocomplete="current-password" class="input" required>
             </div>
-            <p class="help">Required. Your current password</p>
+            <p class="help">Requis votre mot de passe</p>
           </div>
           <hr>
           <div class="field">
-            <label class="label">New password</label>
+            <label class="label">Nouveau mot de passe</label>
             <div class="control">
               <input type="password" autocomplete="new-password" name="password" class="input" required>
             </div>
-            <p class="help">Required. New password</p>
+            <p class="help">Requis votre nouveau mot de passe</p>
           </div>
           <div class="field">
-            <label class="label">Confirm password</label>
+            <label class="label">Confirmer mot de passe</label>
             <div class="control">
               <input type="password" autocomplete="new-password" name="password_confirmation" class="input" required>
             </div>
-            <p class="help">Required. New password one more time</p>
+            <p class="help">Requis votre nouveau mot de passe encore une fois</p>
           </div>
           <hr>
           <div class="field">
             <div class="control">
               <button type="submit" class="button green">
-                Submit
+                Envoyer
               </button>
             </div>
           </div>

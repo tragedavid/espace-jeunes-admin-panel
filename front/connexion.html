@@ -1,53 +1,72 @@
 <!doctype html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page de connexion</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>Page d'inscription </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href ="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+
 </head>
-<body class="bg-gradient-to-r from-indigo-500 via blue-500 to-cyan-500 to-blue-500 ">
-</div>
-    <div class="flex justify-center min-h-screen min-w-screen items-center">
-     <div class="w-full md:w-1/2 flex flex-col items-center " >
-         <!-- text login -->
-         <h1 class="pt-4 text-center text-2xl font-bold text-yellow-400 mb-4">Page de connexion</h1>
-         <div>
-         <img class="mx-auto mb-10" src="Images\2023-03-24_10h49_17.png">
-        </div>
-         <!-- email input -->
-         <div class="w-3/4 mb-6">
-             <input type="email" name="email" id="email" class="w-full py-4 px-8 bg-stone-50 placeholder:font-semibold rounded hover:ring-1 outline-stone-50" placeholder="Nom d'utilisateur">
-         </div>
-         <!-- password input -->
-         <div class="w-3/4 mb-6">
-             <input type="password" name="password" id="password" class="w-full py-4 px-8 bg-stone-50 placeholder:font-semibold rounded hover:ring-1 outline-stone-50 " placeholder="Mot de passe">
-         </div>
-         <!-- remember input -->
-         <div class="w-3/4 flex flex-row justify-between">
-             <div class=" flex items-center gap-x-1">
-                 <input type="checkbox" name="remember" id="" class=" w-4 h-4  ">
-                 <label for="" class="text-sm text-stone-50">Se souvenir de moi</label>
-             </div>
-             <div>
-                 <a href="./password.html" class="text-sm text-stone-50 hover:text-stone-50">Mot de passe oublié ?</a>
-             </div>
-         </div>
-         <!-- button -->
-         <div class="w-3/4 mt-4">
-             <button type="submit" class="py-4 bg-stone-50 w-full rounded text-yellow-400 font-bold hover:bg-black"> Se connecter</button>
-         </div>
-     </div>
+<!-- component -->
+<body >
+
+<div class = "w-full-screen grid h-screen place-content-center w-full h-14 bg-gradient-to-r from-indigo-500 via blue-500 to-cyan-500 to-blue-500 ">
+    <div class="lg:w-12/12 bg-white p-8 rounded-lg lg:rounded-lg items-center">
+        <h3 class="pt-4 text-2xl text-center">Panel Administrateur</h3>
+        <img class="mx-auto" src="Images\2023-03-24_10h49_17.png">
+        <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+            <div class="mb-4">
+                <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                    Email
+                </label>
+                <input
+                    class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+                    placeholder="exemple : johnsmith@gmail.com"
+                />
+            </div>
+            <div class="mb-4 md:flex md:justify-between">
+                <div class="mb-4 md:mr-2 md:mb-0">
+                    <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                        Mot de passe
+                    </label>
+                    <input
+                        class="w-full px-20 py-2 mb-3 text-sm leading-tight text-center text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        id="password"
+                        type="password"
+                        placeholder="**************"
+                    />
+                    <p class="text-xs italic text-red-500">Veuillez rentrer un mot de passe.</p>
+                </div>
+            </div>
+            <div class="mb-6 text-center">
+                <button
+                    class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:blue-500 hover:to-cyan-500 focus:outline-none focus:shadow-outline"
+                    type="button" name="">
+                    Se Connecter
+                </button>
+            </div>
+            <div class="text-center">
+                <a
+                    class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                    href="./index.html"
+                >
+                    Vous n'avez pas de compte ? Inscrivez-vous
+                </a>
+            </div>
+        </form>
     </div>
-        <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
-            <div>
+</div>
+</div>
+<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+    <div>
         <a title="Espace-Jeunes" href="https://www.instagram.com/espace_jeunes_Vierzon/" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
             <img class="object-cover object-center w-full h-full rounded-full" src="Images\2023-03-20_14h21_31.png"/>
         </a>
-        <div class="flex items-end justify-end fixed bottom-0 left-0 mb-4 ml-4 z-10">
-            <div>
-                <a title="Flèche" href="index.html" target="_blank" i class= "fa-solid fa-arrow-left fa-2xl"></i></a></i>
-            </div>
     </div>
- </body>
+</div>
+</body>
+</html>
