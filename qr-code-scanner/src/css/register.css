@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Lemon/Milk', sans-serif;
+  font-family: 'Lemon/Milk light', sans-serif;
+
+
+}
+
+.login-form label {
+  display: block;
+  text-align:left;
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button {
+  border-radius: 5px;
+}
+
+.login-form label[for="username"],
+.login-form label[for="password1"],
+.login-form label[for="password2"],
+.login-form label[for="email"]{
+  font-family: 'Poppins';
+  color:#0BBBD3;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}

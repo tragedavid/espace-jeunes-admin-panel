@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'inscription</title>
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/espacejeunes.png" alt="Logo de la société" class="logo">
+    <h1>Espace Jeunes</h1>
+    <form class="login-form">
+        <label for="username">Pseudo</label>
+        <input type="text" id="username" name="username" placeholder="Entrer votre pseudo">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" pattern=".+@globex\.com" size="30" required placeholder="Entrer votre email">
+
+        <label for="password1">Mot de passe</label>
+        <input type="password" id="password1" name="password" placeholder="Entrer votre mot de passe">
+
+        <label for="password2">Confirmer le mot de passe</label>
+        <input type="password" id="password2" name="password" placeholder="Entrer de nouveau mot de passe">
+
+        <button type="submit">S'inscrire</button>
+        <button type="submit">Se connecter</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Style pour le menu hamburger */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin-bottom: 4px;
+    background-color: black;
+}
+
+/* Style pour le contenu principal */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.qr-code {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-button,
+.location-input,
+.date-input,
+.status-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
