@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 <header>
-    <div class="logo-container">
-        <img src="img/espacejeunes.png" alt="Logo">
-        <span>Espace Jeunes</span>
-    </div>
-    <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="alerts-logo">
-        <img src="path/to/alerts.png" alt="Alerts">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="img/espacejeunes.png" class="logo-image" alt="Logo">
+            <span class="text">Espace Jeunes</span>
+        </div>
+        <hr class="navbar-divider">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </header>
 
-<nav class="menu">
+<nav class="menu hidden">
     <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Historique</a></li>
-        <li><a href="#">Paramètres</a></li>
-        <li><a href="#">Déconnexion</a></li>
+        <li><a href="#"><i class="fas fa-home"></i>Accueil</a></li>
+        <li><a href="#"><i class="fas fa-history"></i>Historique</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i>Paramètres</a></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Déconnexion</a></li>
     </ul>
 </nav>
 
-<div class="content">
-    <h1>Historique</h1>
+<div class="container">
     <div class="qr-code">
-        <!-- Insérez ici le code pour afficher le QR Code -->
+        <h2>QR CODE</h2>
     </div>
-    <button class="filter-button">Filtrer</button>
-    <input type="text" class="location-input" placeholder="Endroit">
-    <input type="date" class="date-input" placeholder="Date">
-    <input type="text" class="status-input" placeholder="Statut">
+    <div class="filter-line">
+        <img src="logo_filtre.png" alt="Logo Filtrer">
+        <span>Endroit :</span>
+        <span>Date :</span>
+        <span>Statut :</span>
+    </div>
+    <div class="data-line">
+        <img src="logo_cinema.png" alt="Logo Cinéma">
+        <span>Endroit : Remploi</span>
+        <span>Date : Remploi</span>
+        <span>Statut : Remplis</span>
+    </div>
 </div>
 
 <script src="js/home.js"></script>
