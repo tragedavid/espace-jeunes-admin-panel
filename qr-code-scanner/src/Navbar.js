@@ -1,7 +1,8 @@
 import React from 'react';
-import './css/navbar.css'; // Chemin vers le fichier CSS
+import './css/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faHistory, faWrench, faSignOutAlt, faBell } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 class Navbar extends React.Component {
   render() {
@@ -17,19 +18,19 @@ class Navbar extends React.Component {
           <ul className="menu-items">
             <li>
               <FontAwesomeIcon icon={faHome} />
-              <a href="#home">Accueil</a>
+              <NavLink to="/accueil" exact activeclassname="active">Accueil</NavLink>
             </li>
             <li>
               <FontAwesomeIcon icon={faHistory} />
-              <a href="#about">Historique</a>
+              <NavLink to="/historique" activeclassname="active">Historique</NavLink>
             </li>
             <li>
               <FontAwesomeIcon icon={faWrench} />
-              <a href="#food">Paramètres</a>
+              <NavLink to="/parametres" activeclassname="active">Paramètres</NavLink>
             </li>
             <li>
               <FontAwesomeIcon icon={faSignOutAlt} />
-              <a href="#testimonials">Déconnexion</a>
+              <NavLink to="/deconnexion" activeclassname="active">Déconnexion</NavLink>
             </li>
             <li>
               <FontAwesomeIcon icon={faBell} />

@@ -217,11 +217,11 @@ body {
   }
 
   .logo {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 2rem;
-  }
+   position: absolute;
+       top: 13px;
+       right: 98px;
+       font-size: 2rem;
+    }
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);

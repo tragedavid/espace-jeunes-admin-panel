@@ -1,77 +1,57 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  max-width: 400px;
-  padding: 20px;
-  text-align: center;
-}
-
-.container {
+/* login.css */
+.container-login {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
 
-.logo {
+.logo-login {
+  display: block;
+  margin: 0 auto;
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
 }
 
-h1 {
+h1.login-title {
   font-size: 24px;
   margin-bottom: 20px;
   font-family: 'Lemon/Milk', sans-serif;
-  font-family: 'Lemon/Milk light', sans-serif;
-
-
 }
 
-.login-form label {
+.login-form-login label {
   display: block;
-  text-align:left;
+  text-align: left;
   margin-bottom: 10px;
 }
 
-.login-form input {
+.login-form-login input {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
 }
 
-.login-form button {
+.login-form-login button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
-}
-
-.login-form button {
   border-radius: 5px;
 }
 
-.login-form label[for="username"],
-.login-form label[for="password"],{
+.login-form-login label[for="username"],
+.login-form-login label[for="password"] {
   font-family: 'Poppins';
-  color:#0BBBD3;
+  color: #0BBBD3;
   font-weight: bold;
   border-radius: 5px;
 }
 
-.login-form input,
-.login-form button {
+.login-form-login input,
+.login-form-login button {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
