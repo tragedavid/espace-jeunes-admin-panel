@@ -6,7 +6,6 @@ class Parametres extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
         <section class="showcase-area" id="showcase">
               <div class="showcase-container">
                 <h1 class="main-title" id="home">Eat Right Food</h1>

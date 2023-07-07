@@ -7,7 +7,6 @@ class Accueil extends React.Component {
   render() {
     return (
       <div className="accueil-page">
-      <Navbar />
         <section className="showcase-area" id="showcase">
           <div className="showcase-container">
             <h1 className="main-title" id="home">Eat Right Food</h1>
